@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#overlay div{
+			position: absolute;
+		}
+	</style>
+
+	<script src="labels.js" type="text/javascript"></script>
+	<script src="jquery-1.11.3.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var labels8000 = [
+			{label:"template", x:100, y:100},
+			{label:"text", x:100, y:100}
+		];
+		var labels9000 = [
+			{label:"aaaaaaaaaaaaaaaa", x:200, y:500},
+			{label:"bbbbbbbbbbbbbbb", x:10, y:700}
+		];
+		var floor8000 = {name:"8000", img:"a.png", labels:labels8000};
+		var floor9000 = {name:"9000", img:"b.png", labels:labels9000};
+		var building = {floorlbl:[8, 9], floors:[floor8000, floor9000]};
+
+		function changeFloors(floor){
+			var floorObj = building.floors[floor];
+			$("#overlay").empty();
+			$("#map").css("src", floorObj.img);
+			for (var i = floorObj.labels.length - 1; i >= 0; i--) {
+				var txtLabel = floorObj.labels[i];
+				$("#overlay").append(
+					$("<div></div>").css("top", txtLabel.y).css("left", txtLabel.x).text(txtLabel.label)
+				);
+			};
+		}
+
+		function search(room) {
+			var searchFloor;
+			for (var i = building.floors.length - 1; i >= 0; i--) {
+				if(room.charAt(0) == building.floorlbl[i]){
+					searchFloor = building.floors[i];
+					changeFloors(i);
+				}
+			};
+			
+			for (var i = .length - 1; i >= 0; i--) {
+				[i]
+			};
+		}
+
+		$(document).ready(function() {
+			//$("#8000").click()
+			changeFloors(1);
+		});
+
+	</script>
+</head>
+<body>
+	<div id="map"></div>
+	<div id="overlay"></div>
+	<div id="ui">
+		<div id="search"></div>
+		<div id="floorNav">
+			<div id="8000"></div>
+			<div id="9000"></div>
+			<div id="10000"></div>
+		</div>
+	</div>
+</body>
+</html>
