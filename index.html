@@ -8,13 +8,10 @@
 		}
 	</style>
 
-	<script src="labels.js" type="text/javascript"></script>
+	<script src="labelsCo.js" type="text/javascript"></script>
 	<script src="jquery-1.11.3.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		var labels8000 = [
-			{label:"template", x:100, y:100},
-			{label:"text", x:100, y:100}
-		];
+
 		var labels9000 = [
 			{label:"aaaaaaaaaaaaaaaa", x:200, y:500},
 			{label:"bbbbbbbbbbbbbbb", x:10, y:700}
@@ -44,14 +41,16 @@
 				}
 			};
 			
-			for (var i = .length - 1; i >= 0; i--) {
-				[i]
+			for (var i = searchFloor.length - 1; i >= 0; i--) {
+				if(room == searchFloor[i].label){
+
+				}
 			};
 		}
 
 		$(document).ready(function() {
 			//$("#8000").click()
-			changeFloors(1);
+			changeFloors(0);
 		});
 
 	</script>
