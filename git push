@@ -1,0 +1,26 @@
+[33mcommit aab534b42cec70523cac2f7ed2b1bdec76dcbb66[m
+Author: TobiNakamura <tobishires@gmail.com>
+Date:   Sat Nov 14 12:54:20 2015 -0800
+
+    8000 level labels added
+
+[33mcommit c22f1362909e0ae71aef1cc92bde8a137594cd14[m
+Merge: 5bb1510 b70a316
+Author: TobiNakamura <tobishires@gmail.com>
+Date:   Sat Nov 14 12:08:05 2015 -0800
+
+    Merge pull request #1 from TobiNakamura/initializeRepo
+    
+    intitialize repo
+
+[33mcommit b70a3163734352af59825d56653c84c71fec15c4[m
+Author: TobiNakamura <tobishires@gmail.com>
+Date:   Sat Nov 14 11:58:16 2015 -0800
+
+    intitialize repo
+
+[33mcommit 5bb1510a10f59d799160aee8b564028281eb28a1[m
+Author: TobiNakamura <tobishires@gmail.com>
+Date:   Sat Nov 14 11:44:34 2015 -0800
+
+    Initial commit
