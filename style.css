@@ -38,8 +38,13 @@
 	border-top-left-radius:5px 5px;
 	border-bottom-left-radius:5px 5px;
 	border-image-outset: none;
-
+	text-align: center;
 }
 #srcText{
 	width: 100%;
+}
+
+.nav:hover { background-color: #ad3232;
+	color: #e5e5e5;
+	font-size: 20.5px;
 }
