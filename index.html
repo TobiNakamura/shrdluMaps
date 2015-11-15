@@ -23,6 +23,9 @@
 			top:0px;
 			left: 0px;
 			z-index: 0;
+			width:10000px;
+			height:10000px;
+			overflow: hidden;
 
 		}
 
@@ -78,8 +81,15 @@
 			for (var i = searchFloor.length - 1; i >= 0; i--) {
 				if(!room.localeCompare(searchFloor[i].label)){
 					var DOMLoc = searchFloor.length-i
-					$("#overlay div:nth-child("+DOMLoc+")" ).css("color","#ff0000");
-					$("body").scrollTop($("window"))
+					var dom = $("#overlay div:nth-child("+DOMLoc+")" );
+					dom.css("color","#ff0000");
+					var scaling = $('#slider').slider("option", "value");
+					scaling /= 50;
+					var pos = dom.offset();
+					var x = (4829+pos.left)*(1-scaling)/2 + pos.left*scaling - $(window).width()/2;
+					var y = (4505+pos.top)*(1-scaling)/2 + pos.top*scaling -  $(window).height()/2;
+					$("body").scrollLeft(x).scrollTop(y);
+					console.log(pos.left+", "+pos.top);
 					return;
 				}
 			};
@@ -104,7 +114,7 @@
 			$("#map").css("transform", "scale3D(0.5,0.5, 1)");
 		    $("#map").css("-ms-transform", "scale3D(0.5,0.5, 1)");
 		    $("#map").css("-webkit-transform", "scale3D(0.5,0.5, 1)");
-		    $("body").scrollTop(1500).scrollLeft(3500);
+		    $("body").scrollTop(3126).scrollLeft(3207);
 
 			$("#8000").click(function(){
 				changeFloors(0);
@@ -148,6 +158,7 @@
 </head>
 <body>
 
+
 	<div id="map">
 		<img id="mapImg">
 		<div id="overlay"></div>
@@ -158,7 +169,7 @@
 		<div id="slider" style="height:200px;"></div>
 		<p id="val"></p>
 
-		<input id="srcText" type="text">
+		<input id="srcText" type="text" style="border-top-right-radius:5px 5px; border-bottom-right-radius:5px 5px; border-top-left-radius:5px 5px; border-bottom-left-radius:5px 5px;">
 		<a id="sbmtbttn">Search</a>
 
 		<div class="nav" id="8000"><a>8000 Level</a></div>
