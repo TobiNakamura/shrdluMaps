@@ -1,7 +1,10 @@
 /*Applied Science Building 8000 level*/
-//STR = Stairs, BATH = Bathroom, HANDBATH = Handicap Bathroom
+//STR = Stairs, 
+//BATH = Bathroom
+//HANDBATH = Handicap Bathroom
 //REN = Renaissance Coffee Shop
-//ELEV= ELEVATOR!!
+//ELEV = Elevator
+
 var labels8000 = [
 	{label:"STR", x: 3035, y:2593},
 	{label:"882", x:2937, y:2373},
@@ -31,14 +34,10 @@ var labels8000 = [
 	{label:"8808", x:2274, y:3205},
 	{label:"8826", x:2330, y:3404},
 	{label:"8822", x:2170, y:3411},
-	{label:"8824", x:1906, y:3411},
-	{label:"8824", x:1906, y:3548},
 	{label:"8816", x:1634, y:3473},
 	{label:"8820", x:1624, y:3759},
-	{label:"8824", x:1906, y:3411},
 	{label:"8844", x:2275, y:3590},
 	{label:"8848", x:2652, y:3547},
-	{label:"8824", x:1906, y:3411},
 	{label:"8800.1", x:3008, y:3183},
 	{label:"8800.2", x:3009, y:3783},
 	{label:"8807", x:3303, y:3389},
@@ -46,7 +45,6 @@ var labels8000 = [
 	{label:"8863.1", x:3521, y:3672},
 	{label:"8824", x:1906, y:3411},
 	{label:"8827", x:3724, y:3166},
-	{label:"8824", x:1906, y:3411},
 	{label:"8823", x:3952, y:3156},
 	{label:"8821", x:4187, y:3252},
 	{label:"8813", x:4399, y:3056},
@@ -74,7 +72,7 @@ var labels8000 = [
 	{label:"8800", x: 3018, y:4143},
 	{label:"8842", x: 2649, y:4220},
 	{label:"8836", x: 2311, y:4222},
-	{label:"8834", x: 2016, y:4222},
+	{label:"8834", x: 2085, y:4222},
 	{label:"8832", x: 1945, y:4222},
 	{label:"8830", x: 1807, y:4233},
 	{label:"STR", x: 1617, y:4203},
@@ -213,7 +211,7 @@ var labels9000 = [
 	{label:"9858", x: 1619, y:3474},
 	{label:"9854", x: 2015, y:3530},
 	{label:"9892", x: 2294, y:3244},
-	{label:"9860", x: 16161, y:3612},
+	{label:"9860", x: 1621, y:3612},
 	{label:"9862", x: 1622, y:3759},
 	{label:"9869", x: 1620, y:3897},
 	{label:"9870", x: 1611, y:4036},
@@ -248,7 +246,7 @@ var labels9000 = [
 	{label:"STR", x: 1103, y:290}
 ];
 
-var labels9000 = [
+var labels10000 = [
 	{label:"10810B", x: 1788, y:560},
 	{label:"10808", x: 2065, y:556},
 	{label:"1062", x: 2660, y:760},
@@ -263,7 +261,6 @@ var labels9000 = [
 	{label:"10820", x: 2375, y:1570},
 	{label:"10810B", x: 1788, y:560},
 	{label:"HANDBATH", x: 2658 , y:1631},
-	{label:"10810B", x: 1788, y:560},
 	{label:"10878", x: 2656, y:1984},
 	{label:"10874", x: 2654, y:2229},
 	{label:"10872", x: 2708, y:2410},
@@ -300,13 +297,13 @@ var labels9000 = [
 	{label:"10924.2", x: 1823, y:3619},
 	{label:"10928", x: 1756, y:4068},
 	{label:"10932", x: 2005, y:4006},
-	{label:"10936", x: 2280, y:4410},
+	{label:"10936", x: 2280, y:4108},
 	{label:"10900", x: 2296, y:3537},
-	{label:"10906", x: 2566, y:3776},
-	{label:"10958", x: 2568, y:3541},
+	{label:"10906", x: 2600, y:3776},
+	{label:"10958", x: 2600, y:3541},
 	{label:"10904", x: 2699, y:3540},
-	{label:"10902", x: 2591, y:3314},
-	{label:"10940", x: 3397, y:4455},
+	{label:"10902", x: 2600, y:3314},
+	{label:"10940", x: 2673, y:4106},
 	{label:"10941", x: 2981, y:4196},
 	{label:"STR", x: 3283, y:4106},
 	{label:"10929", x: 3713, y:4205},
